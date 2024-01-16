@@ -14,6 +14,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
 import { MatTableModule } from '@angular/material/table';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 @NgModule({
   declarations: [],
@@ -32,7 +33,8 @@ import { MatTableModule } from '@angular/material/table';
     MatIconModule,
     MatRadioModule,
     MatSelectModule,
-    MatTableModule
+    MatTableModule,
+    MatProgressBarModule
   ],
   exports: [
     MatTabsModule,
@@ -48,7 +50,8 @@ import { MatTableModule } from '@angular/material/table';
     MatIconModule,
     MatRadioModule,
     MatSelectModule,
-    MatTableModule
+    MatTableModule,
+    MatProgressBarModule
   ]
 })
 export class MaterialModule { }

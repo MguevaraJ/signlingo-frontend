@@ -12,5 +12,25 @@ export const routes: Routes = [
     { 
         path: "register", 
         loadChildren: () => import("./modules/register/register.module").then(m => m.RegisterModule)
+    },
+    { 
+        path: "stages", 
+        loadChildren: () => import("./modules/stages/stages.module").then(m => m.StagesModule)
+    },
+    { 
+        path: "stage/:id", 
+        loadChildren: () => import("./modules/units/units.module").then(m => m.UnitsModule)
+    },
+    { 
+        path: "configuration", 
+        loadChildren: () => import("./modules/configuration/configuration.module").then(m => m.ConfigurationModule)
+    },
+    {
+        path: "lesson/:id",
+        loadChildren: () => import("./modules/lesson/lesson.module").then(m => m.LessonModule)
+    },
+    {
+        path: "**",
+        redirectTo: ""
     }
 ];
